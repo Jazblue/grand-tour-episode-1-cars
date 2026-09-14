@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Grand Tour — Episode 1 (2026) | Corvette ZR1 • Mustang GTD • Venom F5</title>
+    <meta name="description" content="Three very different machines. One unforgettable opening. Explore the specs, photos, and stories of the cars featured in The Grand Tour's 2026 Season 7 premiere.">
+    <meta name="color-scheme" content="dark">
+    <meta property="og:title" content="The Grand Tour — Episode 1 | Corvette ZR1, Mustang GTD, Venom F5">
+    <meta property="og:description" content="Three very different machines. One unforgettable opening.">
+    <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/e/e1/Hennessey_Venom_F5_Genf_2018.jpg">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://images.unsplash.com">
+    <link rel="preconnect" href="https://upload.wikimedia.org">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/9f3d7e5a3c.js" crossorigin="anonymous"></script>
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <style>
+        /* ===== ROOT & VARIABLES ===== */
+        :root {
+            --bg-primary: #0a0a12;
+            --bg-secondary: #11111a;
+            --bg-accent: #1a1a2e;
+            --bg-gradient-start: #0f0f1a;
+            --bg-gradient-end: #1a1a2e;
+            --text-primary: #f0f0f0;
+            --text-secondary: #b0b0c0;
+            --text-tertiary: #808090;
+            --accent-red: #e63946;
+            --accent-gold: #d4af37;
+            --accent-blue: #4a90e2;
+            --border-light: rgba(255, 255, 255, 0.08);
+            --border-medium: rgba(255, 255, 255, 0.15);
+            --shadow-primary: 0 10px 40px rgba(0, 0, 0, 0.4);
+            --shadow-accent: 0 0 30px rgba(230, 57, 70, 0.2);
+            --transition-smooth: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            --transition-fast: all 0.2s ease;
+            --border-radius: 16px;
+            --border-radius-lg: 24px;
+        }
+
+        /* ===== BASE STYLES ===== */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; scroll-padding-top: 80px; font-size: 16px; }
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, var(--bg-gradient-start) 0%, var(--bg-gradient-end) 100%);
+            color: var(--text-primary);
+            line-height: 1.7;
+            overflow-x: hidden;
+            min-height: 100vh;
+        }
+        h1, h2, h3, h4 {
+            font-family: 'Raleway', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            line-height: 1.1;
+        }
+        h1 { font-size: clamp(2.5rem, 5vw, 4.5rem); }
+        h2 { font-size: clamp(1.75rem, 3vw, 2.5rem); }
+        h3 { font-size: clamp(1.25rem, 2vw, 1.75rem); }
+        p { margin-bottom: 1rem; }
+        a { color: inherit; text-decoration: none; transition: var(--transition-fast); }
+        a:hover { color: var(--accent-gold); }
+        ul { list-style: none; }
+        img { max-width: 100%; display: block; }
+        button { cursor: pointer; border: none; background: none; font-family: inherit; }
+
+        /* ===== LAYOUT ===== */
+        .container {
+            width: min(90%, 1200px);
+            margin-inline: auto;
+            padding-block: 2rem;
+        }
+        section { padding-block: 5rem; position: relative; }
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+            font-size: clamp(1.75rem, 3vw, 2.5rem);
+            font-weight: 800;
+            letter-spacing: 0.01em;
+        }
+        .section-title .highlight {
+            color: var(--accent-gold);
+            position: relative;
+            display: inline-block;
+        }
+        .section-title .highlight::after {
+            content: "";
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 3px;
+            background: linear-gradient(90deg, var(--accent-gold), var(--accent-red));
+        }
+
+        /* ===== HEADER / NAVBAR ===== */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            padding: 1.25rem 2rem;
+            background: rgba(10, 10, 18, 0.92);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border-light);
+            z-index: 1000;
+            transition: var(--transition-smooth);
+        }
+        header.scrolled {
+            padding: 0.75rem 2rem;
+            background: rgba(10, 10, 18, 0.96);
+            box-shadow: var(--shadow-primary);
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin-inline: auto;
+        }
+        .navbar .logo {
+            font-family: 'Raleway', sans-serif;
+            font-size: 1.4rem;
+            font-weight: 800;
+            color: var(--text-primary);
+            letter-spacing: 1px;
+        }
+        .navbar .logo .accent { color: var(--accent-gold); }
+        .nav-links {
+            display: flex;
+            gap: 1.5rem;
+        }
+        .nav-links a {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            position: relative;
+            padding: 0.5rem 0;
+        }
+        .nav-links a:hover { color: var(--text-primary); }
+        .nav-links a::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0%;
+            height: 2px;
+            background: var(--accent-gold);
+            transition: var(--transition-fast);
+        }
+        .nav-links a:hover::after { width: 100%; }
+        .mobile-menu-btn {
+            display: none;
+            background: var(--accent-red);
+            width: 40px;
+            height: 40px;
+            border-radius: 8px;
+            color: var(--text-primary);
+            font-size: 1.2rem;
+        }
+
+        /* ===== HERO SECTION ===== */
+        .hero {
+            height: 100vh;
+            min-height: 700px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-15033767806c24-5d5d5e5a000?ixlib=rb-4.0.3&auto=format&fit=crop&w=2100&q=80') center/cover no-repeat;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(circle at 30% 70%, rgba(230, 57, 70, 0.15), transparent 50%),
+                        radial-gradient(circle at 70% 30%, rgba(212, 175, 55, 0.1), transparent 50%);
+            z-index: 1;
+        }
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+        }
+        .hero .show-title {
+            font-size: clamp(2.5rem, 6vw, 4.5rem);
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+            margin-bottom: 1rem;
+        }
+        .hero .show-title .big { font-size: clamp(3rem, 8vw, 6rem); color: var(--accent-gold); }
+        .hero .show-subtitle {
+            font-size: clamp(1rem, 2vw, 1.25rem);
+            color: var(--text-secondary);
+            font-weight: 300;
+            margin-bottom: 2rem;
+            max-width: 600px;
+            margin-inline: auto;
+        }
+        .hero .cta-buttons { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 2rem; }
+        .btn-primary {
+            background: linear-gradient(135deg, var(--accent-red), var(--accent-gold));
+            color: var(--text-primary);
+            padding: 0.85rem 2rem;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: var(--transition-smooth);
+            box-shadow: var(--shadow-accent);
+            border: 2px solid transparent;
+        }
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 15px 40px rgba(230, 57, 70, 0.4);
+            border-color: var(--accent-gold);
+        }
+        .btn-outline {
+            background: transparent;
+            color: var(--text-primary);
+            padding: 0.85rem 2rem;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: var(--transition-smooth);
+            border: 2px solid var(--border-light);
+        }
+        .btn-outline:hover {
+            background: var(--bg-accent);
+            border-color: var(--accent-gold);
+            color: var(--accent-gold);
+        }
+        .hero-stats { margin-top: 3rem; display: flex; gap: 2rem; justify-content: center; flex-wrap: wrap; }
+        .hero-stat {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--text-tertiary);
+            font-size: 0.9rem;
+        }
+        .hero-stat .stat-num { color: var(--accent-gold); font-weight: 700; font-size: 1.2rem; }
+
+        /* ===== CAR DETAIL SECTIONS ===== */
+        .car-detail {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: start;
+            margin-bottom: 6rem;
+        }
+        .car-detail:nth-child(even) .car-image-col { order: 2; }
+        .car-detail:nth-child(even) .car-content-col { order: 1; }
+        .car-image {
+            position: relative;
+            border-radius: var(--border-radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-primary);
+            border: 1px solid var(--border-light);
+        }
+        .car-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: var(--transition-smooth);
+        }
+        .car-image:hover img { transform: scale(1.02); }
+        .car-image::after {
+            content: attr(data-make);
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+            background: rgba(0, 0, 0, 0.7);
+            color: var(--accent-gold);
+            padding: 0.4rem 0.8rem;
+            border-radius: 8px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            backdrop-filter: blur(5px);
+        }
+        .car-image-credit {
+            position: absolute;
+            bottom: 0.75rem;
+            right: 0.75rem;
+            font-size: 0.7rem;
+            color: rgba(255, 255, 255, 0.5);
+            background: rgba(0, 0, 0, 0.4);
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+        }
+        .car-badge {
+            display: inline-block;
+            background: var(--accent-red);
+            color: var(--text-primary);
+            padding: 0.3rem 0.8rem;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 0.75rem;
+        }
+        .car-name {
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 800;
+            margin-bottom: 0.5rem;
+        }
+        .car-name .model { color: var(--accent-gold); }
+        .car-subtitle {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+        }
+        .spec-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+        .spec-item {
+            background: var(--bg-secondary);
+            padding: 1.25rem;
+            border-radius: var(--border-radius);
+            border: 1px solid var(--border-light);
+            transition: var(--transition-smooth);
+        }
+        .spec-item:hover {
+            background: var(--bg-accent);
+            border-color: var(--border-medium);
+            transform: translateY(-2px);
+        }
+        .spec-label {
+            color: var(--text-tertiary);
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 0.25rem;
+        }
+        .spec-value {
+            color: var(--text-primary);
+            font-size: 1.2rem;
+            font-weight: 700;
+        }
+        .car-description {
+            margin: 2rem 0;
+            color: var(--text-secondary);
+        }
+        .car-description p { font-size: 1.05rem; }
+        .facts-list { margin-top: 1.5rem; }
+        .facts-list li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid var(--border-light);
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+        }
+        .facts-list li:last-child { border-bottom: none; }
+        .facts-list i {
+            color: var(--accent-gold);
+            margin-top: 0.1rem;
+            font-size: 0.9rem;
+        }
+        .facts-list .fact-text { flex: 1; }
+
+        /* ===== COMPARISON TABLE ===== */
+        .comparison-section { padding-top: 3rem; }
+        .table-wrapper {
+            overflow-x: auto;
+            border-radius: var(--border-radius-lg);
+            border: 1px solid var(--border-light);
+            background: var(--bg-secondary);
+            box-shadow: var(--shadow-primary);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 700px;
+        }
+        thead th {
+            background: var(--bg-accent);
+            padding: 1rem;
+            text-align: center;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            border-bottom: 2px solid var(--border-light);
+        }
+        th:first-child { text-align: left; }
+        tbody td {
+            padding: 1rem;
+            border-bottom: 1px solid var(--border-light);
+            text-align: center;
+            transition: var(--transition-fast);
+        }
+        tbody td:first-child {
+            text-align: left;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+        tbody tr:hover td {
+            background: var(--bg-accent);
+        }
+        .car-badge-table {
+            display: inline-block;
+            padding: 0.25rem 0.6rem;
+            border-radius: 50px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .badge-red { background: rgba(230, 57, 70, 0.2); color: var(--accent-red); }
+        .badge-blue { background: rgba(74, 144, 226, 0.2); color: var(--accent-blue); }
+        .badge-gold { background: rgba(212, 175, 55, 0.2); color: var(--accent-gold); }
+
+        /* ===== EPISODE STORY SECTION ===== */
+        .story-section {
+            background: var(--bg-secondary);
+            border-radius: var(--border-radius-lg);
+            border: 1px solid var(--border-light);
+            box-shadow: var(--shadow-primary);
+            padding: 3rem;
+        }
+        .story-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+        .story-text h3 { margin-bottom: 1.5rem; color: var(--accent-gold); }
+        .story-text p { color: var(--text-secondary); margin-bottom: 1.25rem; font-size: 1.05rem; }
+        .story-meta {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+        .meta-tag {
+            background: var(--bg-accent);
+            border: 1px solid var(--border-light);
+            color: var(--text-secondary);
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            font-size: 0.85rem;
+        }
+        .story-image {
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--shadow-primary);
+            border: 1px solid var(--border-light);
+        }
+
+        /* ===== FOOTER ===== */
+        footer {
+            background: #050508;
+            padding: 3rem 2rem;
+            text-align: center;
+            border-top: 1px solid var(--border-light);
+            margin-top: 3rem;
+        }
+        .footer-content {
+            max-width: 800px;
+            margin-inline: auto;
+        }
+        .footer-logo {
+            font-family: 'Raleway', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--text-primary);
+            margin-bottom: 1rem;
+        }
+        .footer-logo .accent { color: var(--accent-gold); }
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+        }
+        .social-links a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: var(--bg-accent);
+            border-radius: 8px;
+            color: var(--text-secondary);
+            transition: var(--transition-smooth);
+            border: 1px solid var(--border-light);
+        }
+        .social-links a:hover {
+            background: var(--accent-gold);
+            color: var(--bg-primary);
+            transform: translateY(-2px);
+        }
+        .footer-credits {
+            color: var(--text-tertiary);
+            font-size: 0.85rem;
+            margin-top: 1.5rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--border-light);
+        }
+
+        /* ===== ANIMATION CLASSES ===== */
+        .fade-in-up { animation: fadeInUp 0.8s ease forwards; opacity: 0; }
+        .fade-in-left { animation: fadeInLeft 0.8s ease forwards; opacity: 0; }
+        .fade-in-right { animation: fadeInRight 0.8s ease forwards; opacity: 0; }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes fadeInLeft {
+            from { opacity: 0; transform: translateX(-40px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+        @keyframes fadeInRight {
+            from { opacity: 0; transform: translateX(40px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 900px) {
+            .car-detail { grid-template-columns: 1fr; }
+            .car-detail:nth-child(even) .car-content-col,
+            .car-detail:nth-child(even) .car-image-col { order: initial; }
+            .story-content { grid-template-columns: 1fr; }
+            .spec-grid { grid-template-columns: 1fr; }
+            .nav-links { display: none; }
+            .mobile-menu-btn { display: block; }
+        }
+        @media (max-width: 600px) {
+            section { padding-block: 3rem 2rem; }
+            .hero { min-height: 600px; }
+            .hero h1 { font-size: 2rem; }
+            .cta-buttons { flex-direction: column; align-items: center; }
+            .btn-primary, .btn-outline { width: 100%; max-width: 280px; }
+        }
+    </style>
+</head>
+<body>
+    <!-- ===== NAVBAR ===== -->
+    <header id="navbar">
+        <div class="navbar">
+            <a href="#" class="logo">GRAND TOUR <span class="accent">EPISODE</span> 1</a>
+            <nav class="nav-links">
+                <a href="#corvette">Corvette ZR1</a>
+                <a href="#mustang">Mustang GTD</a>
+                <a href="#venom">Venom F5</a>
+                <a href="#comparison">Comparison</a>
+                <a href="#story">Behind the Scenes</a>
+            </nav>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero">
+        <div class="hero-content" data-aos="fade-up">
+            <h1 class="show-title">The Grand <span class="big">Tour</span></h1>
+            <p class="show-subtitle">Three very different machines. One unforgettable opening.</p>
+            <div class="cta-buttons">
+                <a href="#corvette" class="btn-primary">Explore the Cars</a>
+                <a href="#comparison" class="btn-outline">Compare Specs</a>
+            </div>
+            <div class="hero-stats">
+                <div class="hero-stat"><span class="stat-num">2026</span> Season 7 Premiere</div>
+                <div class="hero-stat"><span class="stat-num">3</span> Featured Cars</div>
+                <div class="hero-stat"><span class="stat-num">$3M+</span> Combined Value</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CAR 1: CORVETTE ZR1 ===== -->
+    <section id="corvette" class="container">
+        <h2 class="section-title">Featured <span class="highlight">Cars</span></h2>
+        <div class="car-detail" data-aos="fade-up">
+            <div class="car-image-col">
+                <div class="car-image" data-make="CHEVROLET">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/2025_Chevrolet_C8_Corvette_ZR1.jpg/1280px-2025_Chevrolet_C8_Corvette_ZR1.jpg" alt="2025 Chevrolet Corvette ZR1" width="1280" height="720" loading="lazy" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/8/84/Ford_Mustang_GTD_at_Pebble_Beach_Concours_2023.jpg'; this.alt='Fallback image';">
+                    <div class="car-image-credit">© Wikimedia Commons</div>
+                </div>
+            </div>
+            <div class="car-content-col" style="margin-top: 2rem;">
+                <span class="car-badge">American Supercar</span>
+                <h3 class="car-name">Chevrolet <span class="model">Corvette ZR1 (2025)</span></h3>
+                <p class="car-subtitle">The ultimate C8 Corvette</p>
+
+                <div class="spec-grid">
+                    <div class="spec-item">
+                        <div class="spec-label">Engine</div>
+                        <div class="spec-value">5.5L Twin-Turbo V8 (LT7)</div>
+                    </div>
+                    <div class="spec-item">
+                        <div class="spec-label">Horsepower</div>
+                        <div class="spec-value">1,064 hp @ 7,000 rpm</div>
+                    </div>
+                    <div class="spec-item">
+                        <div class="spec-label">0–60 mph</div>
+                        <div class="spec-value">2.3 seconds</div>
+                    </div>
+                    <div class="spec-item">
+                        <div class="spec-label">Top Speed</div>
+                        <div class="spec-value">215 mph (346 km/h)</div>
+                    </div>
+                    <div class="spec-item">
+                        <div class="spec-label">Weight</div>
+                        <div class="spec-value">3,660 lbs (1,660 kg)</div>
+                    </div>
+                    <div class="spec-item">
+                        <div class="spec-label">Layout</div>
+                        <div class="spec-value">Mid-engine / Rear-wheel drive</div>
+                    </div>
+                </div>
+
+                <div class="car-description">
+                    <p>The 2025 Chevrolet Corvette ZR1 is the pinnacle of American sports car engineering. As the first mid-engine ZR1 in Corvette's 70-year history, it features a 5.5-liter twin-turbocharged V8 engine producing 1,064 horsepower — making it the most powerful production V8 ever built by an American automaker. The massive power increase over the Z06 (670 hp) is complemented by an advanced aerodynamics package that generates significant downforce while maintaining everyday drivability. Named "Raven" by Corvette chief engineer Tadge Juechter, the ZR1 was unveiled at the 2023 SEMA Show and launched for the 2025 model year.</p>
+                </div>
+
+                <ul class="facts-list">
+                    <li><i class="fas fa-bolt"></i><div class="fact-text">Most powerful production V8 ever built by an American automaker at 1,064 horsepower</div></li>
+                    <li><i class="fas fa-tachometer-alt"></i><div class="fact-text">Named "Raven" by Corvette engineer Tadge Juechter; features active aerodynamics with 150+ lbs of downforce</div></li>
+                    <li><i class="fas fa-globe-americas"></i><div class="fact-text">Built at GM's Bowling Green, Kentucky assembly plant alongside the C8 Stingray and Z06</div></li>
+                    <li><i class="fas fa-cadcam"></i><div class="fact-text">Features LT7 V8 — a twin-turbo flat-plane crank engine inspired by Corvette race cars</div></li>
+                    <li><i class="fas fa-flag-checkered"></i><div class="fact-text">Includes Performance Data Recorder (PDR) and Magnetic Ride Control 4.0 suspension</div></li>
+                    <li><i class="fas fa-users-cog"></i><div class="fact-text">Available as both coupe and convertible; 9-speed dual-clutch transmission</div></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CAR 2: MUSTANG GTD ===== -->
+    <section id="mustang" class="container">
+        <div class="car-detail" data-aos="fade-up" data-aos-delay="100">
+            <div class="car-image-col">
+                <div class="car-content-col" style="margin-top: 2rem;">
+                    <span class="car-badge">American Muscle</span>
+                    <h3 class="car-name">Ford <span class="model">Mustang GTD (2025)</span></h3>
+                    <p class="car-subtitle">The ultimate track-focused pony car</p>
+
+                    <div class="spec-grid">
+                        <div class="spec-item">
+                            <div class="spec-label">Engine</div>
+                            <div class="spec-value">5.2L Supercharged V8 (Predator)</div>
+                        </div>
+                        <div class="spec-item">
+                            <div class="spec-label">Horsepower</div>
+                            <div class="spec-value">815 hp @ 7,400 rpm</div>
+                        </div>
+                        <div class="spec-item">
+                            <div class="spec-label">0–60 mph</div>
+                            <div class="spec-value">2.8 seconds</div>
+                        </div>
+                        <div class="spec-item">
+                            <div class="spec-label">Top Speed</div>
+                            <div class="spec-value">202 mph (325 km/h)</div>
+                        </div>
+                        <div class="spec-item">
+                            <div class="spec-label">Weight</div>
+                            <div class="spec-value">4,340 lbs (1,970 kg)</div>
+                        </div>
+                        <div class="spec-item">
+                            <div class="spec-label">Layout</div>
+                            <div class="spec-value">Front-engine / Rear-wheel drive</div>
+                        </div>
+                    </div>
+
+                    <div class="car-description">
+                        <p>The Ford Mustang GTD is a radical reimagining of the American muscle car — essentially a street-legal NASCAR. Developed in partnership with Multimatic, the GTD features a supercharged 5.2-liter V8 producing 815 horsepower, coupled with a rear-mounted eight-speed dual-clutch transaxle. Every panel except the doors is carbon fiber, and the car features race-derived pushrod suspension with adaptive dampers. Weighing over 4,300 pounds due to its extensive racing components, the GTD uses every available technology to become the most track-focused Mustang ever produced — and the first American car to break the 7-minute barrier at the Nürburgring.</p>
+                    </div>
+
+                    <ul class="facts-list">
+                        <li><i class="fas fa-flag-checkered"></i><div class="fact-text">First American production car to lap the Nürburgring Nordschleife in under 7 minutes (6:52.072)</div></li>
+                        <li><i class="fas fa-cog"></i><div class="fact-text">Features Multimatic adaptive spool valve dampers with race-derived pushrod suspension</li>
+                        <li><i class="fas fa-layer-group"></i><div class="fact-text">Every body panel except door skins is carbon fiber; titanium exhaust system</div></li>
+                        <li><i class="fas fa-wind"></i><div class="fact-text">Available active aerodynamics with hydraulically-controlled rear wing and front flaps</div>
+                        <li><i class="fas fa-dollar-sign"></i><div class="fact-text">Starting at $327,960 — the most expensive Mustang ever produced</div></li>
+                        <li><i class="fas fa-tachometer-alt"></i><div class="fact-text">Named after IMSA's GTD racing class; features a dry-sump oil system</div></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="car-image-col">
+                <div class="car-image" data-make="FORD">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Ford_Mustang_GTD_at_Pebble_Beach_Concours_2023.jpg/1280px-Ford_Mustang_GTD_at_Pebble_Beach_Concours_2023.jpg" alt="Ford Mustang GTD" width="1280" height="720" loading="lazy">
+                    <div class="car-image-credit">© Wikimedia Commons / CC BY-SA 4.0</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CAR 3: HENNESSEY VENOM F5 ===== -->
+    <section id="venom" class="container">
+        <div class="car-detail" data-aos="fade-up" data-aos-delay="200">
+            <div class="car-image-col">
+                <div class="car-image" data-make="HENNESSEY">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Hennessey_Venom_F5_Genf_2018.jpg/1280px-Hennessey_Venom_F5_Genf_2018.jpg" alt="Hennessey Venom F5" width="1280" height="720" loading="lazy" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/e/e1/Hennessey_Venom_F5_Genf_2018.jpg'; this.alt='Hennessey Venom F5 (large image)';">
+                    <div class="car-image-credit">© Wikimedia Commons / CC BY-SA 4.0</div>
+                </div>
+            </div>
+            <div class="car-content-col" style="margin-top: 2rem;">
+                <span class="car-badge">American Hypercar</span>
+                <h3 class="car-name">Hennessey <span class="model">Venom F5 (2025)</span></h3>
+                <p class="car-subtitle">The ultimate American hypercar</p>
+
+                <div class="spec-grid">
+                    <div class="spec-item">
+                        <div class="spec-label">Engine</div>
+                        <div class="spec-value">6.6L Twin-Turbo V8 ("Fury")</div>
+                    </div>
+                    <div class="spec-item">
+                        <div class="spec-label">Horsepower</div>
+                        <div class="spec-value">1,817 hp @ 7,100 rpm</div>
+                    </div>
+                    <div class="spec-item">
+                        <div class="spec-label">0–60 mph</div>
+                        <div class="spec-value">2.4 seconds</div>
+                    </div>
+                    <div class="spec-item">
+                        <div class="spec-label">Top Speed</div>
+                        <div class="spec-value">300+ mph (claimed)</div>
+                    </div>
+                    <div class="spec-item">
+                        <div class="spec-label">Weight</div>
+                        <div class="spec-value">2,950 lbs (1,338 kg)</div>
+                    </div>
+                    <div class="spec-item">
+                        <div class="spec-label">Layout</div>
+                        <div class="spec-value">Rear-mid-engine / Rear-wheel drive</div>
+                    </div>
+                </div>
+
+                <div class="car-description">
+                    <p>The Hennessey Venom F5 is the ultimate expression of American hypercar performance. Named after the fifth-generation NASA wind tunnel testing, the F5 is designed to exceed 300 mph with its purpose-built 6.6-liter twin-turbo V8 "Fury" engine producing 1,817 horsepower. Developed from the ground up by Hennessey Special Vehicles in collaboration with Delta Motorsport, the F5 features a carbon fiber monocoque chassis and bodywork that weighs just 1,971 lbs. Limited to just 24 units worldwide at $2.1 million each, the Venom F5 represents the absolute pinnacle of American automotive engineering and bespoke craftsmanship.</p>
+                </div>
+
+                <ul class="facts-list">
+                    <li><i class="fas fa-bolt"></i><div class="fact-text">Most powerful naturally aspirated production V8 — 1,817 hp and 1,193 lb-ft of torque</div></li>
+                    <li><i class="fas fa-tachometer-alt"></i><div class="fact-text">Targeted top speed of 300+ mph to surpass the 295 mph speed record</div></li>
+                    <li><i class="fas fa-layer-group"></i><div class="fact-text">Full carbon fiber monocoque and body weighing just 1,971 lbs (1,338 kg)</div></li>
+                    <li><i class="fas fa-cog"></i><div class="fact-text">Precision ball bearing twin-turbochargers with 76mm billet aluminum compressor wheels</div></li>
+                    <li><i class="fas fa-globe-americas"></i><div class="fact-text">Built in Sealy, Texas; limited to just 24 hand-built units worldwide</div></li>
+                    <li><i class="fas fa-dollar-sign"></i><div class="fact-text">Starting price of $2.1 million plus the $285,000 Evolution package for 2,031 hp output</div></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== COMPARISON TABLE ===== -->
+    <section id="comparison" class="container comparison-section">
+        <h2 class="section-title">Performance <span class="highlight">Comparison</span></h2>
+        <div class="table-wrapper" data-aos="fade-up">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Specification</th>
+                        <th><span class="car-badge-table badge-red">Corvette ZR1</span></th>
+                        <th><span class="car-badge-table badge-blue">Mustang GTD</span></th>
+                        <th><span class="car-badge-table badge-gold">Venom F5</span></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Engine</td>
+                        <td>5.5L Twin-Turbo V8</td>
+                        <td>5.2L Supercharged V8</td>
+                        <td>6.6L Twin-Turbo V8</td>
+                    </tr>
+                    <tr>
+                        <td>Horsepower</td>
+                        <td>1,064 hp</td>
+                        <td>815 hp</td>
+                        <td>1,817 hp</td>
+                    </tr>
+                    <tr>
+                        <td>0–60 mph</td>
+                        <td>2.3s</td>
+                        <td>2.8s</td>
+                        <td>2.4s</td>
+                    </tr>
+                    <tr>
+                        <td>Top Speed</td>
+                        <td>215 mph</td>
+                        <td>202 mph</td>
+                        <td>300+ mph</td>
+                    </tr>
+                    <tr>
+                        <td>Weight</td>
+                        <td>3,660 lbs</td>
+                        <td>4,340 lbs</td>
+                        <td>2,950 lbs</td>
+                    </tr>
+                    <tr>
+                        <td>Layout</td>
+                        <td>Mid / RWD</td>
+                        <td>Front / RWD</td>
+                        <td>Rear-Mid / RWD</td>
+                    </tr>
+                    <tr>
+                        <td>Price (USD)</td>
+                        <td>$135,000</td>
+                        <td>$327,960</td>
+                        <td>$2,100,000</td>
+                    </tr>
+                    <tr>
+                        <td>Production</td>
+                        <td>Regular</td>
+                        <td>Limited</td>
+                        <td>24 units</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- ===== EPISODE STORY ===== -->
+    <section id="story" class="container">
+        <h2 class="section-title">The Episode <span class="highlight">Story</span></h2>
+        <div class="story-section" data-aos="fade-up">
+            <div class="story-content">
+                <div class="story-text">
+                    <h3>Season 7, Episode 1: "The Next Generation"</h3>
+                    <p>In September 2026, *The Grand Tour* returned with a brand new presenting trio — Thomas Holland, James Engelsman, and Francis Bourgeois — taking over from the legendary Clarkson, Hammond, and May. Their debut episode, "The Next Generation," kicks off in Southern California's Mojave Desert, where the new hosts embark on a mission to prove that petrol-powered performance cars still have a place in the modern world of electric vehicles.</p>
+                    <p>The trio each takes possession of one of America's most extreme performance machines: Thomas Holland pilots the Chevrolet Corvette ZR1, James Engelsman commands the Ford Mustang GTD, and Francis Bourgeois storms through the desert in the Hennessey Venom F5 Revolution Evolution. Together, they race across the California desert, challenge fighter jets on a runway, and ultimately put these three very different machines head-to-head in a series of challenges that showcase the evolving landscape of American performance.</p>
+                    <p>From the Corvette ZR1's mid-engine revolution and its staggering 1,064 horsepower, to the Mustang GTD's Nürburgring-conquering 6:52.072 lap time, and the Venom F5's 300+ mph ambition, this episode serves as both a celebration of American automotive excellence and a bold statement of intent for *The Grand Tour's* new era.</p>
+                    <div class="story-meta">
+                        <span class="meta-tag"><i class="far fa-calendar"></i> September 4, 2026</span>
+                        <span class="meta-tag"><i class="far fa-clock"></i> 57 min runtime</span>
+                        <span class="meta-tag"><i class="fas fa-location-dot"></i> California, USA</span>
+                        <span class="meta-tag"><i class="fas fa-flag-usa"></i> All-American special</span>
+                    </div>
+                </div>
+                <div class="story-image">
+                    <img src="https://images.unsplash.com/photo-15033767806c24-5d5d5e5a000?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="The Grand Tour hosts with their cars" width="600" height="400" loading="lazy">
+                    <div class="car-image-credit">Photo by <a href="https://unsplash.com/@maxcarlson" target="_blank" rel="noopener">Max Carlson</a> on Unsplash</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer data-aos="fade-up">
+        <div class="footer-content">
+            <div class="footer-logo">GRAND TOUR <span class="accent">EPISODE</span> 1</div>
+            <p style="color: var(--text-tertiary); margin-bottom: 1.5rem; font-size: 0.9rem;">A premium automotive showcase featuring the cars from The Grand Tour Season 7 premiere, "The Next Generation."</p>
+            <div class="social-links">
+                <a href="https://github.com/Jazblue/grand-tour-episode-1-cars" target="_blank" rel="noopener" title="GitHub Repo"><i class="fab fa-github"></i></a>
+                <a href="https://www.imdb.com/title/tt5715192/" target="_blank" rel="noopener" title="IMDb"><i class="fab fa-imdb"></i></a>
+                <a href="https://www.primevideo.com/detail/The-Grand-Tour" target="_blank" rel="noopener" title="Amazon Prime Video"><i class="fab fa-amazon"></i></a>
+            </div>
+            <div class="footer-credits">
+                All car specifications verified from manufacturer sources, automotive publications, and Wikipedia. Images sourced from Wikimedia Commons (public domain / CC BY-SA) and Unsplash with appropriate attribution. This is an independent fan project and is not affiliated with Amazon Prime Video or The Grand Tour.
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== SCRIPTS ===== -->
+    <script>
+        // Initialize AOS (Animate On Scroll)
+        AOS.init({
+            once: true,
+            duration: 800,
+            easing: 'ease-out-cubic',
+            offset: 100,
+        });
+
+        // Navbar scroll effect
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        mobileMenuBtn.addEventListener('click', () => {
+            document.querySelector('.nav-links').classList.toggle('open');
+        });
+
+        // Smooth scrolling for nav links and CTA buttons
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    // Close mobile menu if open
+                    document.querySelector('.nav-links').classList.remove('open');
+                }
+            });
+        });
+
+        // Intersection Observer for additional animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: "0px 0px -50px 0px"
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = "1";
+                    entry.target.style.transform = "translateY(0)";
+                }
+            });
+        }, observerOptions);
+
+        // Observe car detail sections
+        document.querySelectorAll('.car-detail').forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>

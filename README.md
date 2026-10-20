@@ -5,7 +5,7 @@ A premium, dark-themed automotive showcase website featuring the three cars from
 ## 🚗 The Three Cars
 
 ### 1. Chevrolet Corvette ZR1 (2025)
-![Chevrolet Corvette ZR1](./images/placeholder-corvette.jpg)
+![Chevrolet Corvette ZR1](https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/2025_Chevrolet_C8_Corvette_ZR1.jpg/1280px-2025_Chevrolet_C8_Corvette_ZR1.jpg)
 
 **The ultimate C8 Corvette.** The 2025 ZR1 is the most powerful production V8 ever built by an American automaker, delivering 1,064 horsepower from its 5.5L twin-turbo LT7 V8. As the first mid-engine ZR1 in Corvette history, it represents a quantum leap in American sports car performance.
 
@@ -20,7 +20,7 @@ A premium, dark-themed automotive showcase website featuring the three cars from
 | **Price** | ~$135,000 |
 
 ### 2. Ford Mustang GTD (2025)
-![Ford Mustang GTD](./images/placeholder-mustang.jpg)
+![Ford Mustang GTD](https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Ford_Mustang_GTD_at_Pebble_Beach_Concours_2023.jpg/1280px-Ford_Mustang_GTD_at_Pebble_Beach_Concours_2023.jpg)
 
 **The ultimate track-focused pony.** The Mustang GTD is essentially a street-legal race car, featuring a 5.2L supercharged V8 producing 815 horsepower, every non-door-panel in carbon fiber, and Multimatic adaptive spool valve dampers. It's the most expensive Mustang ever made and the first American production car to break the 7-minute barrier at the Nürburgring.
 
@@ -35,7 +35,7 @@ A premium, dark-themed automotive showcase website featuring the three cars from
 | **Price** | ~$327,960 |
 
 ### 3. Hennessey Venom F5 (2025)
-![Hennessey Venom F5](./images/placeholder-venom.jpg)
+![Hennessey Venom F5](https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Hennessey_Venom_F5_Genf_2018.jpg/1280px-Hennessey_Venom_F5_Genf_2018.jpg)
 
 **The ultimate American hypercar.** The Venom F5 is powered by a purpose-built 6.6L twin-turbo V8 "Fury" engine producing 1,817 horsepower. With a full carbon fiber monocoque weighing just 1,971 lbs, it achieves a staggering 0.92 hp/lb power-to-weight ratio. Limited to just 24 hand-built units, the F5 is engineered to exceed 300 mph.
 
